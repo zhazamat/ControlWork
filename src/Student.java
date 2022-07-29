@@ -26,11 +26,11 @@ private Double averageMark;
     public Double getAverageMark() {
         return averageMark;
     }
-    public void getAverageMarkException() throws Exception{
+    public Double getAverageMarkException() throws Exception{
         if(getAverageMark()>5 || getAverageMark()<1){
             throw new Exception("IO Exception");}
         else
-            System.out.println(getAverageMark());
+            return getAverageMark();
     }
     public int getScholarship(){
         if(getAverageMark()==5.0){
